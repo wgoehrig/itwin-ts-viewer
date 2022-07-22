@@ -12,7 +12,7 @@
     "build:esbuild": "node esbuild.js",
     "build:assets": "node ./scripts/copyAssets.js",
     "serve": "serve -l 3001 ./public",
-    "watch": "run-p \"build:** --watch\"",
+    "watch": "run-p \"build:** -- --watch\"",
     "start": "run-p watch serve"
   },
   "author": {
