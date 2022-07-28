@@ -1,6 +1,6 @@
 import { BrowserAuthorizationCallbackHandler, BrowserAuthorizationClient } from "@itwin/browser-authorization";
 import { BentleyCloudRpcManager, IModelReadRpcInterface, IModelTileRpcInterface } from "@itwin/core-common";
-import { CheckpointConnection, FitViewTool, IModelApp, ScreenViewport, StandardViewId, StandardViewTool, ViewCreator3d } from "@itwin/core-frontend";
+import { CheckpointConnection, IModelApp, ScreenViewport, ViewCreator3d } from "@itwin/core-frontend";
 import { FrontendIModelsAccess } from "@itwin/imodels-access-frontend";
 import { IModelsClient } from "@itwin/imodels-client-management";
 declare const ENV: any; // injected from .env
