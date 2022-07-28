@@ -33,3 +33,7 @@ const viewState = await viewCreator.createDefaultView({ skyboxOn: true });
 const root = document.getElementById("root") as HTMLDivElement;
 const vp = ScreenViewport.create(root, viewState);
 IModelApp.viewManager.addViewport(vp);
+
+/** Rotate and fit view */
+IModelApp.tools.run(StandardViewTool.toolId, vp, StandardViewId.RightIso);
+IModelApp.tools.run(FitViewTool.toolId, vp, true, false);
