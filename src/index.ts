@@ -8,7 +8,7 @@ declare const ENV: any; // injected from .env
 /** Setup auth and login */
 const redirectUri = window.location.href;
 await BrowserAuthorizationCallbackHandler.handleSigninCallback(redirectUri);
-const authClient = new BrowserAuthorizationClient({ clientId: ENV.CLIENT_ID, scope: ENV.SCOPES, redirectUri });
+const authClient = new BrowserAuthorizationClient({ clientId: ENV.CLIENT_ID, scope: ENV.SCOPES, redirectUri, responseType: "code" });
 await authClient.signIn()
 
 /** Application initialization */
