@@ -24,5 +24,5 @@
       - Redirect URIs - http://localhost:3001/
 
 3. From a terminal at any directory within the repo, execute "npm start". This will compile the application in watch mode and start an http server on port 3001.
-4. Navigate to http://localhost:3000 in your browser
+4. Navigate to http://localhost:3001 in your browser
 
