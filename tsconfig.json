@@ -18,6 +18,7 @@
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "outDir": "./lib/",
+    "suppressImplicitAnyIndexErrors": true
   },
   "include": [
     "src",
